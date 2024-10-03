@@ -1,0 +1,13 @@
+Starting zookeeper and kafka services
+C:\kafka\bin\windows\zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
+C:\kafka\bin\windows\kafka-server-start.bat C:\kafka\config\server.properties
+
+Create topic in kafka
+C:\kafka\bin\windows\kafka-topics.bat --create --topic topic-name-one --bootstrap-server localhost:9092
+
+Create Producer/Events in kafka
+C:\kafka\bin\windows\kafka-console-producer.bat --topic topic-name-one --bootstrap-server localhost:9092
+
+Consumer/Read topics from kafka
+C:\kafka\bin\windows\kafka-console-consumer.bat --topic topic-name-one --from-beginning --bootstrap-server localhost:9092
+
